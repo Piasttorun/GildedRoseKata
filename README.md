@@ -2,6 +2,8 @@ Guilded Rose Kata
 
 The Updated GuildedRose is located in GuildedRose.java
 
+The file is located in _GildedRoseKata/src/main/java/com/gildedrose/_
+
 The code considers any item name that:
 * begins with the word "aged" aged, hence acting like brie.
 * begins with the word "conjured", conjured. Hence acts conjured.
