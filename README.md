@@ -19,4 +19,7 @@ These tests are document for your referance.
 
 The code itself is also documented for your use.
 
+Code also contains maven and gradle packages from original file structure.
+The file was used as a Maven project.
+
 
