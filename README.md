@@ -1,30 +1,22 @@
-# Gilded Rose starting position in Java
+Guilded Rose Kata
 
-## Run the TextTest Fixture from Command-Line
+The Updated GuildedRose is located in GuildedRose.java
 
-```
-./gradlew -q text
-```
+The code considers any item name that:
+* begins with the word "aged" aged, hence acting like brie.
+* begins with the word "conjured", conjured. Hence acts conjured.
+* fits the regex ^Backstage passes to a [A-Z0-9]+ concert$ a ticket.
+* does not have any of the above characteristics defualt.
 
-### Specify Number of Days
+If the non-hard coded implementation is undesireble another version of the method exists:
 
-For e.g. 10 days:
+_resolveQualityAlternate()_
 
-```
-./gradlew -q text --args 10
-```
+Which may be used instead.
 
-You should make sure the gradle commands shown above work when you execute them in a terminal before trying to use TextTest (see below).
+The code tests run on GildedRoseTest.
+These tests are document for your referance.
+
+The code itself is also documented for your use.
 
 
-## Run the TextTest approval test that comes with this project
-
-There are instructions in the [TextTest Readme](../texttests/README.md) for setting up TextTest. What's unusual for the Java version is there are two executables listed in [config.gr](../texttests/config.gr) for Java. The first uses Gradle wrapped in a python script. Uncomment these lines to use it:
-
-    executable:${TEXTTEST_HOME}/Java/texttest_rig.py
-    interpreter:python
-
-The other relies on your CLASSPATH being set correctly in [environment.gr](../texttests/environment.gr). Uncomment these lines to use it instead:
-
-    executable:com.gildedrose.TexttestFixture
-    interpreter:java
