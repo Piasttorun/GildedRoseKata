@@ -138,7 +138,7 @@ class GildedRoseTest {
     }
 
     @Test
-    @DisplayName("Tests default quality increase case: not past sell in, not conjured")
+    @DisplayName("Tests default quality increase case: not passed sell in, not conjured")
     void testDefaultQualityNotSellInNotConjured() {
         Item testItem = new Item("stamina potion", 10, 15);
         GildedRoseBetter.resolveDefaultCase(testItem);
@@ -146,7 +146,7 @@ class GildedRoseTest {
     }
 
     @Test
-    @DisplayName("Tests default quality increase case: not past sell in, not conjured")
+    @DisplayName("Tests default quality increase case: not passed sell in, not conjured")
     void testDefaultQualitySellInNotConjured() {
         Item testItem = new Item("stamina potion", -5, 15);
         GildedRoseBetter.resolveDefaultCase(testItem);
@@ -154,7 +154,7 @@ class GildedRoseTest {
     }
 
     @Test
-    @DisplayName("Tests default quality increase case: not past sell in, conjured")
+    @DisplayName("Tests default quality increase case: not passed sell in, conjured")
     void testDefaultQualityNotSellInConjured() {
         Item testItem = new Item("Conjured stamina potion", 10, 15);
         GildedRoseBetter.resolveDefaultCase(testItem);
@@ -162,7 +162,7 @@ class GildedRoseTest {
     }
 
     @Test
-    @DisplayName("Tests default quality increase case: not past sell in, conjured")
+    @DisplayName("Tests default quality increase case: not passed sell in, conjured")
     void testDefaultQualitySellInConjured() {
         Item testItem = new Item("Conjured stamina potion", -5, 15);
         GildedRoseBetter.resolveDefaultCase(testItem);
